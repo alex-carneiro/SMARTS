@@ -1,5 +1,6 @@
 package com.usp.ihc.smarts;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -22,8 +23,59 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Chamada para serviço de emergência!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
             }
         });
+    }
+
+    public void search1(View v){
+        Intent search = new Intent(getApplicationContext(), SearchActivity.class);
+        Bundle bund = new Bundle();
+
+        bund.putString("type", "Pronto socorro");
+        search.putExtras(bund);
+
+        startActivity(search);
+    }
+
+    public void search2(View v){
+        Intent search = new Intent(getApplicationContext(), SearchActivity.class);
+        Bundle bund = new Bundle();
+
+        bund.putString("type", "Clínicas");
+        search.putExtras(bund);
+
+        startActivity(search);
+    }
+
+    public void search3(View v){
+        Intent search = new Intent(getApplicationContext(), SearchActivity.class);
+        Bundle bund = new Bundle();
+
+        bund.putString("type", "Maternidades");
+        search.putExtras(bund);
+
+        startActivity(search);
+    }
+
+    public void search4(View v){
+        Intent search = new Intent(getApplicationContext(), SearchActivity.class);
+        Bundle bund = new Bundle();
+
+        bund.putString("type", "Posto de saúde");
+        search.putExtras(bund);
+
+        startActivity(search);
+    }
+
+    public void search5(View v){
+        Intent search = new Intent(getApplicationContext(), SearchActivity.class);
+        Bundle bund = new Bundle();
+
+        bund.putString("type", "Outros serviços");
+        search.putExtras(bund);
+
+        startActivity(search);
     }
 
     @Override

@@ -29,50 +29,110 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <ImageButton
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:id="@+id/button1"
-                android:src="@drawable/health"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/button1"
+                    android:src="@drawable/health"
+                    android:onClick="search1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Pronto socorro"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
 
-            <ImageButton
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:id="@+id/button2"
-                android:src="@drawable/health"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/button2"
+                    android:src="@drawable/health"
+                    android:onClick="search2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Clínicas"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
 
-            <ImageButton
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:id="@+id/button3"
-                android:src="@drawable/health"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/button3"
+                    android:src="@drawable/health"
+                    android:onClick="search3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Maternidades"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
 
-            <ImageButton
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:id="@+id/button4"
-                android:src="@drawable/health"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/button4"
+                    android:src="@drawable/health"
+                    android:onClick="search4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Posto de saúde"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
 
-            <ImageButton
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:id="@+id/button5"
-                android:src="@drawable/health"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/button5"
+                    android:src="@drawable/health"
+                    android:onClick="search5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Outros serviços"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
         </LinearLayout>
 
     </ScrollView>
