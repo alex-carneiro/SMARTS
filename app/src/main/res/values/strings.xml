@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SMARTS</string>
     <string name="action_settings">Ajuda</string>
+    <string name="title_activity_maps">SMARTS</string>
 </resources>

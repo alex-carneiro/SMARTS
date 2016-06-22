@@ -1,9 +1,11 @@
 package com.usp.ihc.smarts;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 public class SearchActivity extends AppCompatActivity {
@@ -20,6 +22,13 @@ public class SearchActivity extends AppCompatActivity {
         st = (TextView)findViewById(R.id.service_type);
 
         st.setText("Faça sua busca por: " + bund.getString("type"));
+    }
+
+    public void mapSearch(View v){
+        Intent map = new Intent(getApplicationContext(), MapsActivity.class);
+        map.putExtras(bund);
+
+        startActivity(map);
     }
 
     @Override
