@@ -6,22 +6,42 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.view.ViewGroup.LayoutParams;
+import android.widget.ScrollView;
 
 public class SearchActivity extends AppCompatActivity {
-    private TextView st;
     private Bundle bund;
+    private LinearLayout linearLayout;
+    private ScrollView scroll;
+    private ListView places;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         bund = getIntent().getExtras();
 
-        st = (TextView)findViewById(R.id.service_type);
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, android.R.id.text1, bund.getStringArrayList("markers"));
 
-        st.setText("Faça sua busca por: " + bund.getString("type"));
+        places = new ListView(this);
+
+        places.setAdapter(adapter1);
+        places.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+
+        linearLayout = (LinearLayout)findViewById(R.id.places_list);
+        linearLayout.addView(places);
+
+//        scroll = (ScrollView)findViewById(R.id.scrollView);
+//        scroll.addView(places);
+
     }
 
     public void mapSearch(View v){
@@ -53,4 +73,10 @@ public class SearchActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-}
+
+    @Override
+    public boolean onSupportNavigateUp(){
+        this.finish();
+
+        return true;
+    }}

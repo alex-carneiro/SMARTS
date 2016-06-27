@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:2:1-46:12
 	xmlns:android
 		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:2:11-69
 	package
@@ -18,7 +18,7 @@ ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\Andr
 	android:name
 		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:10:22-76
 application
-ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:12:5-42:19
+ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:12:5-44:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
@@ -136,9 +136,7 @@ MERGED from [com.google.android.gms:play-services-wearable:8.4.0] C:\Users\Alex 
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:17:9-35
-	android:screenOrientation
-		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:16:9-45
+		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
 		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:15:9-41
 	android:allowBackup
@@ -146,37 +144,41 @@ MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Alex Carneiro\Andro
 	android:icon
 		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:14:9-43
 	android:theme
-		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:18:9-40
+		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:17:9-40
 activity#com.usp.ihc.smarts.MainActivity
-ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:19:9-25:20
+ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:18:9-26:20
+	android:screenOrientation
+		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:20:13-50
 	android:name
-		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:19:19-47
+		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:19:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:20:13-24:29
+ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:24:27-74
 activity#com.usp.ihc.smarts.SearchActivity
-ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:26:9-52
+ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:27:9-28:58
+	android:screenOrientation
+		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:28:19-56
 	android:name
-		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:26:19-49
+		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:27:19-49
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:35:9-37:55
+ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:37:9-39:55
 	android:name
-		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:36:13-58
+		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:38:13-58
 	android:value
-		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:37:13-52
+		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:39:13-52
 activity#com.usp.ihc.smarts.MapsActivity
-ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:39:9-41:68
+ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:41:9-43:68
 	android:label
-		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:41:13-56
+		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:43:13-56
 	android:name
-		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:40:13-41
+		ADDED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml:42:13-41
 uses-sdk
 INJECTED from C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Alex Carneiro\AndroidStudioProjects\SMARTS\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
