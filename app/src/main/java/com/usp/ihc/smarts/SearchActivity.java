@@ -1,9 +1,12 @@
 package com.usp.ihc.smarts;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -35,6 +38,8 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
 
     private Bundle bund;
     private TextView tp;
+    private TextView lab1;
+    private TextView lab2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +51,15 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
 
         bund = getIntent().getExtras();
         tp = (TextView)findViewById(R.id.service_type);
+        lab1 = (TextView)findViewById(R.id.text_dist);
+        lab2 = (TextView)findViewById(R.id.text_aval);
+
+        if(!isLargeScreen(this)){
+            tp.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
+            lab1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
+            lab2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
+        }
+
         tp.setText(tp.getText() + bund.getString("type"));
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -87,6 +101,11 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
         startActivity(list);
     }
 
+    public static boolean isLargeScreen(Context context) {
+        int screenSize = context.getResources().getConfiguration().screenLayout
+                & Configuration.SCREENLAYOUT_SIZE_MASK;
+        return screenSize >= Configuration.SCREENLAYOUT_SIZE_LARGE;
+    }
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
