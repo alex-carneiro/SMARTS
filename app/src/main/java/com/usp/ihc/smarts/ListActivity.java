@@ -27,7 +27,7 @@ public class ListActivity extends AppCompatActivity {
 
         bund = getIntent().getExtras();
         tp = (TextView)findViewById(R.id.service_list);
-        tp.setText("Lista de " + bund.getString("type") + "\norganizadas por " + bund.getString("sortby"));
+        tp.setText("Lista de " + bund.getString("type") + "\norganizada por " + bund.getString("sortby"));
         
         ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, bund.getStringArrayList("markers"));
