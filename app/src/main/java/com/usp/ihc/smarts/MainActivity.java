@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         Bundle bund = new Bundle();
 
         bund.putString("type", getResources().getString(R.string.categ1));
+        bund.putInt("cat", 1);
         search.putExtras(bund);
 
         startActivity(search);
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         Bundle bund = new Bundle();
 
         bund.putString("type", getResources().getString(R.string.categ2));
+        bund.putInt("cat", 2);
         search.putExtras(bund);
 
         startActivity(search);
@@ -66,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         Bundle bund = new Bundle();
 
         bund.putString("type", getResources().getString(R.string.categ3));
+        bund.putInt("cat", 3);
         search.putExtras(bund);
 
         startActivity(search);
