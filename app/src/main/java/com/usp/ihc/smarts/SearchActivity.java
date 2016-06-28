@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -33,9 +34,7 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
     private Marker os1;
 
     private Bundle bund;
-    private LinearLayout linearLayout;
-    private ScrollView scroll;
-    private ListView places;
+    private TextView tp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,30 +45,46 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         bund = getIntent().getExtras();
-
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, bund.getStringArrayList("markers"));
-
-//        places = new ListView(this);
-//
-//        places.setAdapter(adapter1);
-//        places.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
-//
-//        linearLayout = (LinearLayout)findViewById(R.id.places_list);
-//        linearLayout.addView(places);
-//
-//
+        tp = (TextView)findViewById(R.id.service_type);
+        tp.setText(tp.getText() + bund.getString("type"));
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
 
-    public void mapSearch(View v){
-        Intent map = new Intent(getApplicationContext(), MapsActivity.class);
-        map.putExtras(bund);
+    public void goListRanking(View v){
+        Intent list = new Intent(getApplicationContext(), ListActivity.class);
+        ArrayList<String> content = new ArrayList<String>();
 
-        startActivity(map);
+        content.add("Local 1: xxxxxxxxxxxx\nMédia de valiações: 4,8");
+        content.add("Local 2: xxxxxxxxxxxx\nMédia de valiações: 4,1");
+        content.add("Local 3: xxxxxxxxxxxx\nMédia de valiações: 3,9");
+        content.add("Local 4: xxxxxxxxxxxx\nMédia de valiações: 3,3");
+        content.add("Local 5: xxxxxxxxxxxx\nMédia de valiações: 3,2");
+
+        bund.putStringArrayList("markers", content);
+        bund.putString("sortby", "avaliações");
+        list.putExtras(bund);
+
+        startActivity(list);
+    }
+
+    public void goListDistance(View v){
+        Intent list = new Intent(getApplicationContext(), ListActivity.class);
+        ArrayList<String> content = new ArrayList<String>();
+
+        content.add("Local 1: xxxxxxxxxxxx\nDistância: 200 m");
+        content.add("Local 2: xxxxxxxxxxxx\nDistância: 1,1 km");
+        content.add("Local 3: xxxxxxxxxxxx\nDistância: 1,4 km");
+        content.add("Local 4: xxxxxxxxxxxx\nDistância: 2,0 km");
+        content.add("Local 5: xxxxxxxxxxxx\nDistância: 3,5 km");
+
+        bund.putStringArrayList("markers", content);
+        bund.putString("sortby", "distâncias");
+        list.putExtras(bund);
+
+        startActivity(list);
     }
 
     /**
@@ -167,4 +182,5 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
         this.finish();
 
         return true;
-    }}
+    }
+}

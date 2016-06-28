@@ -2,9 +2,9 @@
     <string name="app_name">SMARTS</string>
     <string name="action_settings">Ajuda</string>
     <string name="title_activity_maps">SMARTS</string>
-    <string name="categ1">Pronto socorro</string>
-    <string name="categ2">Maternidade</string>
-    <string name="categ3">Posto de saúde</string>
-    <string name="categ4">Dentista</string>
+    <string name="categ1">Prontos socorros</string>
+    <string name="categ2">Maternidades</string>
+    <string name="categ3">Postos de saúde</string>
+    <string name="categ4">Dentistas</string>
     <string name="categ5">Outros serviços</string>
 </resources>

@@ -164,6 +164,10 @@
         "source": "C:\\Users\\Alex Carneiro\\AndroidStudioProjects\\SMARTS\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
     },
     {
+        "merged": "C:\\Users\\Alex Carneiro\\AndroidStudioProjects\\SMARTS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_list.xml",
+        "source": "C:\\Users\\Alex Carneiro\\AndroidStudioProjects\\SMARTS\\app\\src\\main\\res\\layout\\activity_list.xml"
+    },
+    {
         "merged": "C:\\Users\\Alex Carneiro\\AndroidStudioProjects\\SMARTS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
         "source": "C:\\Users\\Alex Carneiro\\AndroidStudioProjects\\SMARTS\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_list_menu_item_icon.xml"
     },

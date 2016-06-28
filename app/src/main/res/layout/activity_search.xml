@@ -29,6 +29,13 @@
             android:layout_height="match_parent"
             android:layout_weight=".35"
             android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Busca por:\n"
+                android:id="@+id/service_type"
+                android:layout_gravity="center_vertical" />
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="wrap_content"
@@ -39,12 +46,13 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButtonMap"
                     android:src="@android:drawable/ic_dialog_map"
-                    android:onClick="mapSearch"/>
+                    android:onClick="goListDistance"
+                    android:backgroundTint="@color/colorPrimary" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Ordenar por distâncias"
+                    android:text="Organizar por distâncias"
                     android:layout_gravity="center_vertical" />
             </LinearLayout>
 
@@ -57,12 +65,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButtonAval"
-                    android:src="@android:drawable/ic_menu_info_details"/>
+                    android:src="@android:drawable/ic_menu_info_details"
+                    android:onClick="goListRanking"
+                    android:backgroundTint="@color/colorPrimary" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Ordenar por avaliações"
+                    android:text="Organizar por avaliações"
                     android:layout_gravity="center_vertical" />
             </LinearLayout>
         </LinearLayout>
