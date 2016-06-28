@@ -4,7 +4,5 @@
     <string name="title_activity_maps">SMARTS</string>
     <string name="categ1">Prontos socorros</string>
     <string name="categ2">Maternidades</string>
-    <string name="categ3">Postos de saúde</string>
-    <string name="categ4">Dentistas</string>
-    <string name="categ5">Outros serviços</string>
+    <string name="categ3">Dentistas</string>
 </resources>

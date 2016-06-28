@@ -45,9 +45,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButtonMap"
-                    android:src="@android:drawable/ic_dialog_map"
                     android:onClick="goListDistance"
-                    android:backgroundTint="@color/colorPrimary" />
+                    android:background="@null"
+                    android:src="@drawable/distance32"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -65,9 +65,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButtonAval"
-                    android:src="@android:drawable/ic_menu_info_details"
                     android:onClick="goListRanking"
-                    android:backgroundTint="@color/colorPrimary" />
+                    android:background="@null"
+                    android:src="@drawable/aval32"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
