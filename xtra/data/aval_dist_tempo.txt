@@ -1,0 +1,78 @@
+avaliações, distâncias (carro) e tempo (transporte público)
+
+do IME para ->
+
+Hospital Metropolitano Butantã
+3.8 aval
+4.3 km
+29 min
+
+Pronto Socorro Butantã
+-1 aval
+5.8 km
+43 min
+
+Pronto Socorro Municipal da Lapa
+3.3 aval
+6.1 km
+26 min
+
+Pompéia Pronto Socorro
+-1 aval
+10.5 km
+56 min
+
+Pronto Socorro Hospital Samaritano
+4.1 aval
+12.4 km
+1h 11 min
+
+Hospital Municipal Maternidade Prof Mario Degni
+4.6 aval
+7 km
+49 min
+
+Hospital e Maternidade Metropolitano
+3.2 aval
+21 min
+54 min
+
+Hospital e Maternidade Jardins
+2.5 aval
+6.7 km
+28 min
+
+Unidade Avançada Hospital e Maternidade Renascença
+-1 aval
+9.1 km
+58 min
+
+Hospital e Maternindade Sino Brasileiro
+2.5 aval
+10.4 km
+48 min
+
+Unicodonto Dentista Butantã
+-1 aval
+3.8 km
+21 min
+
+Vital Odonto
+-1 aval
+3.9 km
+24 min
+
+Coore Odontologia
+-1 aval
+5.3 km
+33 min
+
+Odontologia Jaguaré
+-1 aval
+5.4 km
+35 min
+
+RH Odontologia
+-1 aval
+5.2 km
+42 min
