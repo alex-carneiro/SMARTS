@@ -20,8 +20,8 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text=""
-            android:id="@+id/nome"
-            android:layout_gravity="center_vertical" />
+            android:layout_gravity="center"
+            android:id="@+id/nome"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

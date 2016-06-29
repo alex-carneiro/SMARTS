@@ -10,6 +10,7 @@ import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -34,9 +35,9 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
 
     private Bundle bund;
     private TextView tp;
-    private TextView lab1;
-    private TextView lab2;
-    private TextView lab3;
+    private Button lab1;
+    private Button lab2;
+    private Button lab3;
 
     private ArrayList<Float> pos = new ArrayList<>();
     private ArrayList<String> names = new ArrayList<>();
@@ -55,9 +56,9 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
 
         bund = getIntent().getExtras();
         tp = (TextView)findViewById(R.id.service_type);
-        lab1 = (TextView)findViewById(R.id.text_dist);
-        lab2 = (TextView)findViewById(R.id.text_time);
-        lab3 = (TextView)findViewById(R.id.text_aval);
+        lab1 = (Button)findViewById(R.id.bt_dist);
+        lab2 = (Button)findViewById(R.id.bt_time);
+        lab3 = (Button)findViewById(R.id.bt_aval);
 
         if(!isLargeScreen(this)){
             tp.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
@@ -154,6 +155,10 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
                 "\nDistância: " + dist.get(4).toString() + " km");
 
         bund.putStringArrayList("markers", content);
+        bund.putStringArrayList("names", names);
+        bund.putStringArrayList("dist", dist);
+        bund.putStringArrayList("time", time);
+        bund.putStringArrayList("aval", aval);
         bund.putString("sortby", "avaliações");
         list.putExtras(bund);
 
@@ -243,22 +248,26 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
         }
 
         content.add(names.get(0) + "\nTempo de percurso em ônibus: " + time.get(0).toString() + " min" +
-                "\nMédia de valiações: " + (aval.get(0).toString().length() > 0 ? aval.get(4).toString() : "?") +
+                "\nMédia de valiações: " + (aval.get(0).toString().length() > 0 ? aval.get(0).toString() : "?") +
                 "\nDistância: " + dist.get(0).toString() + " km");
         content.add(names.get(1) + "\nTempo de percurso em ônibus: " + time.get(1).toString() + " min" +
-                "\nMédia de valiações: " + (aval.get(1).toString().length() > 0 ? aval.get(4).toString() : "?") +
+                "\nMédia de valiações: " + (aval.get(1).toString().length() > 0 ? aval.get(1).toString() : "?") +
                 "\nDistância: " + dist.get(1).toString() + " km");
         content.add(names.get(2) + "\nTempo de percurso em ônibus: " + time.get(2).toString() + " min" +
-                "\nMédia de valiações: " + (aval.get(2).toString().length() > 0 ? aval.get(4).toString() : "?") +
+                "\nMédia de valiações: " + (aval.get(2).toString().length() > 0 ? aval.get(2).toString() : "?") +
                 "\nDistância: " + dist.get(2).toString() + " km");
         content.add(names.get(3) + "\nTempo de percurso em ônibus: " + time.get(3).toString() + " min" +
-                "\nMédia de valiações: " + (aval.get(3).toString().length() > 0 ? aval.get(4).toString() : "?") +
+                "\nMédia de valiações: " + (aval.get(3).toString().length() > 0 ? aval.get(3).toString() : "?") +
                 "\nDistância: " + dist.get(3).toString() + " km");
         content.add(names.get(4) + "\nTempo de percurso em ônibus: " + time.get(4).toString() + " min" +
                 "\nMédia de valiações: " + (aval.get(4).toString().length() > 0 ? aval.get(4).toString() : "?") +
                 "\nDistância: " + dist.get(4).toString() + " km");
 
         bund.putStringArrayList("markers", content);
+        bund.putStringArrayList("names", names);
+        bund.putStringArrayList("dist", dist);
+        bund.putStringArrayList("time", time);
+        bund.putStringArrayList("aval", aval);
         bund.putString("sortby", "tempo em de percurso em ônibus");
         list.putExtras(bund);
 
@@ -333,16 +342,16 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
         }
 
         content.add(names.get(0) + "\nDistância: " + dist.get(0).toString() + " km" +
-                "\nMédia de valiações: " + (aval.get(0).toString().length() > 0 ? aval.get(4).toString() : "?") +
+                "\nMédia de valiações: " + (aval.get(0).toString().length() > 0 ? aval.get(0).toString() : "?") +
                 "\nTempo de percurso em ônibus: " + time.get(0).toString() + " min");
         content.add(names.get(1) + "\nDistância: " + dist.get(1).toString() + " km" +
-                "\nMédia de valiações: " + (aval.get(1).toString().length() > 0 ? aval.get(4).toString() : "?") +
+                "\nMédia de valiações: " + (aval.get(1).toString().length() > 0 ? aval.get(1).toString() : "?") +
                 "\nTempo de percurso em ônibus: " + time.get(1).toString() + " min");
         content.add(names.get(2) + "\nDistância: " + dist.get(2).toString() + " km" +
-                "\nMédia de valiações: " + (aval.get(2).toString().length() > 0 ? aval.get(4).toString() : "?") +
+                "\nMédia de valiações: " + (aval.get(2).toString().length() > 0 ? aval.get(2).toString() : "?") +
                 "\nTempo de percurso em ônibus: " + time.get(2).toString() + " min");
         content.add(names.get(3) + "\nDistância: " + dist.get(3).toString() + " km" +
-                "\nMédia de valiações: " + (aval.get(3).toString().length() > 0 ? aval.get(4).toString() : "?") +
+                "\nMédia de valiações: " + (aval.get(3).toString().length() > 0 ? aval.get(3).toString() : "?") +
                 "\nTempo de percurso em ônibus: " + time.get(3).toString() + " min");
         content.add(names.get(4) + "\nDistância: " + dist.get(4).toString() + " km" +
                 "\nMédia de valiações: " + (aval.get(4).toString().length() > 0 ? aval.get(4).toString() : "?") +

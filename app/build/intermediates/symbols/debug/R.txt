@@ -829,6 +829,9 @@ int id aval 0x7f0d009b
 int id beginning 0x7f0d0033
 int id book_now 0x7f0d0050
 int id bottom 0x7f0d001e
+int id bt_aval 0x7f0d00a3
+int id bt_dist 0x7f0d009f
+int id bt_time 0x7f0d00a1
 int id button1 0x7f0d0093
 int id button2 0x7f0d0094
 int id button3 0x7f0d0095
@@ -1007,9 +1010,6 @@ int id textView6 0x7f0d00b5
 int id textView7 0x7f0d00b6
 int id textView8 0x7f0d00b9
 int id textView9 0x7f0d00ba
-int id text_aval 0x7f0d00a3
-int id text_dist 0x7f0d009f
-int id text_time 0x7f0d00a1
 int id time 0x7f0d009a
 int id title 0x7f0d006a
 int id title_bar 0x7f0d00bf

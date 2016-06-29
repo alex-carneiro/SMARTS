@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -41,6 +42,8 @@ public class PlaceActivity extends AppCompatActivity {
             time.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
             aval.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
         }
+
+        Log.e("TEST", Integer.toString(bund.containsKey("names") ? 0 : 1));
 
         name.setText(bund.getStringArrayList("names").get(bund.getInt("id")));
         dist.setText("Distância: " + bund.getStringArrayList("dist").get(bund.getInt("id")) + " km");

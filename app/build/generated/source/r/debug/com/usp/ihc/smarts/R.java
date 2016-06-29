@@ -2909,6 +2909,9 @@ containing a value of this type.
         public static final int beginning=0x7f0d0033;
         public static final int book_now=0x7f0d0050;
         public static final int bottom=0x7f0d001e;
+        public static final int bt_aval=0x7f0d00a3;
+        public static final int bt_dist=0x7f0d009f;
+        public static final int bt_time=0x7f0d00a1;
         public static final int button1=0x7f0d0093;
         public static final int button2=0x7f0d0094;
         public static final int button3=0x7f0d0095;
@@ -3087,9 +3090,6 @@ containing a value of this type.
         public static final int textView7=0x7f0d00b6;
         public static final int textView8=0x7f0d00b9;
         public static final int textView9=0x7f0d00ba;
-        public static final int text_aval=0x7f0d00a3;
-        public static final int text_dist=0x7f0d009f;
-        public static final int text_time=0x7f0d00a1;
         public static final int time=0x7f0d009a;
         public static final int title=0x7f0d006a;
         public static final int title_bar=0x7f0d00bf;
