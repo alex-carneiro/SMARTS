@@ -176,6 +176,10 @@
         "source": "C:\\Users\\Alex Carneiro\\AndroidStudioProjects\\SMARTS\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\layout\\mr_media_route_controller_material_dialog_b.xml"
     },
     {
+        "merged": "C:\\Users\\Alex Carneiro\\AndroidStudioProjects\\SMARTS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_place.xml",
+        "source": "C:\\Users\\Alex Carneiro\\AndroidStudioProjects\\SMARTS\\app\\src\\main\\res\\layout\\activity_place.xml"
+    },
+    {
         "merged": "C:\\Users\\Alex Carneiro\\AndroidStudioProjects\\SMARTS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\Alex Carneiro\\AndroidStudioProjects\\SMARTS\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_part_time.xml"
     },

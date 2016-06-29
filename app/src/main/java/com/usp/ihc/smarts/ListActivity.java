@@ -1,10 +1,13 @@
 package com.usp.ihc.smarts;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -29,7 +32,7 @@ public class ListActivity extends AppCompatActivity {
         tp = (TextView)findViewById(R.id.service_list);
         tp.setText("Lista de " + bund.getString("type") + "\norganizada por " + bund.getString("sortby"));
         
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, bund.getStringArrayList("markers"));
 
         places = new ListView(this);
@@ -39,6 +42,21 @@ public class ListActivity extends AppCompatActivity {
 
         linearLayout = (LinearLayout)findViewById(R.id.places_list);
         linearLayout.addView(places);
+
+        // ListView Item Click Listener
+        places.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(ListActivity.this, PlaceActivity.class);
+
+                bund.putInt("id", position);
+                intent.putExtras(bund);
+
+                startActivity(intent);
+            }
+
+        });
     }
 
     @Override

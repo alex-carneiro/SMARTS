@@ -40,9 +40,9 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
 
     private ArrayList<Float> pos = new ArrayList<>();
     private ArrayList<String> names = new ArrayList<>();
-    private ArrayList<Float> dist = new ArrayList<>();
-    private ArrayList<Float> time = new ArrayList<>();
-    private ArrayList<Float> aval = new ArrayList<>();
+    private ArrayList<String> dist = new ArrayList<>();
+    private ArrayList<String> time = new ArrayList<>();
+    private ArrayList<String> aval = new ArrayList<>();
     private BitmapDescriptor img;
 
     @Override
@@ -118,6 +118,10 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
         content.add(names.get(4) + "\nDistância: " + dist.get(4).toString() + " km");
 
         bund.putStringArrayList("markers", content);
+        bund.putStringArrayList("names", names);
+        bund.putStringArrayList("dist", dist);
+        bund.putStringArrayList("time", time);
+        bund.putStringArrayList("aval", aval);
         bund.putString("sortby", "distâncias");
         list.putExtras(bund);
 
@@ -159,148 +163,148 @@ public class SearchActivity extends AppCompatActivity implements OnMapReadyCallb
             names.add("Hospital Metropolitano Butantã");
             pos.add(new Float(-23.5778783));
             pos.add(new Float(-46.710237));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Pronto Socorro Butantã");
             pos.add(new Float(-23.5845095));
             pos.add(new Float(-46.7389941));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Pronto Socorro Municipal da Lapa");
             pos.add(new Float(-23.5376878));
             pos.add(new Float(-46.7223644));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Pompéia Pronto Socorro");
             pos.add(new Float(-23.530763));
             pos.add(new Float(-46.6856718));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Pronto Socorro Hospital Samaritano");
             pos.add(new Float(-23.5397619));
             pos.add(new Float(-46.6617802));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
         }else if(bund.getInt("cat") == 2){
             img = BitmapDescriptorFactory.fromResource(R.drawable.maternidade_pin);
 
             names.add("Hospital Municipal Maternidade Prof Mario Degni");
             pos.add(new Float(-23.577892));
             pos.add(new Float(-46.7649257));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Hospital e Maternidade Metropolitano");
             pos.add(new Float(-23.5305761));
             pos.add(new Float(-46.6970766));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Hospital e Maternidade Jardins");
             pos.add(new Float(-23.5657179));
             pos.add(new Float(-46.6866803));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Unidade Avançada Hospital e Maternidade Renascença");
             pos.add(new Float(-23.5376091));
             pos.add(new Float(-46.7782509));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Hospital e Maternindade Sino Brasileiro");
             pos.add(new Float(-23.5317663));
             pos.add(new Float(-46.7816037));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
         }else if(bund.getInt("cat") == 3){
             img = BitmapDescriptorFactory.fromResource(R.drawable.dentista_pin);
 
             names.add("Unicodonto Dentista Butantã");
             pos.add(new Float(-23.5707529));
             pos.add(new Float(-46.70964));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Vital Odonto");
             pos.add(new Float(-23.5715445));
             pos.add(new Float(-46.7070276));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Coore Odontologia");
             pos.add(new Float(-23.5536657));
             pos.add(new Float(-46.7473358));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Odontologia Jaguaré");
             pos.add(new Float(-23.5483646));
             pos.add(new Float(-46.7480117));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("RH Odontologia");
             pos.add(new Float(-23.580596));
             pos.add(new Float(-46.7348796));
-            dist.add(new Float(10));
-            time.add(new Float(20));
-            aval.add(new Float(3.4));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
         }else{
             img = BitmapDescriptorFactory.fromResource(R.drawable.map_gen_icon);
 
             names.add("Local 1");
             pos.add(new Float(-23.5660094));
             pos.add(new Float(-46.7244228));
-            dist.add(new Float(0));
-            time.add(new Float(0));
-            aval.add(new Float(-1));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Local 2");
             pos.add(new Float(-23.568586));
             pos.add(new Float(-46.744850));
-            dist.add(new Float(0));
-            time.add(new Float(0));
-            aval.add(new Float(-1));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Local 3");
             pos.add(new Float(-23.553874));
             pos.add(new Float(-46.720861));
-            dist.add(new Float(0));
-            time.add(new Float(0));
-            aval.add(new Float(-1));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Local 4");
             pos.add(new Float(-23.558461));
             pos.add(new Float(-46.7131418));
-            dist.add(new Float(0));
-            time.add(new Float(0));
-            aval.add(new Float(-1));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
 
             names.add("Local 5");
             pos.add(new Float(-23.553205));
             pos.add(new Float(-46.707300));
-            dist.add(new Float(0));
-            time.add(new Float(0));
-            aval.add(new Float(-1));
+            dist.add("10,0");
+            time.add("20,0");
+            aval.add("3,4");
         }
 
         // Adicionando markers

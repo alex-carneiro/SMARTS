@@ -59,6 +59,7 @@
             android:name="com.usp.ihc.smarts.MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name="com.usp.ihc.smarts.ListActivity" />
+        <activity android:name="com.usp.ihc.smarts.PlaceActivity" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
