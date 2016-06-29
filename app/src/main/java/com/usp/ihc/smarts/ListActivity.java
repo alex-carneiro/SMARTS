@@ -1,6 +1,7 @@
 package com.usp.ihc.smarts;
 
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -76,6 +77,9 @@ public class ListActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Snackbar.make(findViewById(android.R.id.content), "Escolha um prestador de serviços", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
+
             return true;
         }
 

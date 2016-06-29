@@ -1,4 +1,4 @@
-avaliações, distâncias (carro) e tempo (transporte público)
+﻿avaliações, distâncias (carro) e tempo (transporte público)
 
 do IME para ->
 
@@ -34,7 +34,7 @@ Hospital Municipal Maternidade Prof Mario Degni
 
 Hospital e Maternidade Metropolitano
 3.2 aval
-21 min
+7,9 km
 54 min
 
 Hospital e Maternidade Jardins

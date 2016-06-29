@@ -37,6 +37,36 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Chamada para serviço de emergência!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
+                AlertDialog alerta;
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+
+                builder.setTitle("Chamada de Emergência");
+
+                builder.setMessage("Confirmar chamada de emergência?");
+
+                //define um botão como positivo
+                builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface arg0, int arg1) {
+                        Snackbar.make(findViewById(android.R.id.content), "Chamada para serviço de emergência realizada!", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                    }
+                });
+
+                //define um botão como negativo.
+                builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface arg0, int arg1) {
+                        Snackbar.make(findViewById(android.R.id.content), "Chamada para serviço de emergência cancelada!", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                    }
+                });
+
+                //cria o AlertDialog
+                alerta = builder.create();
+
+                //Exibe
+                alerta.show();
+                alerta.setCanceledOnTouchOutside(false);
             }
         });
     }
@@ -91,6 +121,9 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Snackbar.make(findViewById(android.R.id.content), "Escolha uma categoria ou chame um serviço de emergência", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
+
             return true;
         }
 
